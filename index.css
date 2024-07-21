@@ -1,0 +1,418 @@
+/* Start Header */
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.507)), url(Images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#header ul {
+    list-style: none;
+}
+
+#header .icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.354);
+    color: white;
+}
+
+.bold {
+    font-weight: 800 !important;
+}
+
+.size {
+    font-size: 50px;
+}
+
+.cd-intro {
+    margin: 4em auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-intro {
+        margin: 5em auto;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-intro {
+        margin: 6em auto;
+    }
+}
+
+.cd-headline {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-headline {
+        font-size: 4.4rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-headline {
+        font-size: 60px;
+    }
+}
+
+.cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.cd-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+.cd-words-wrapper b.is-visible {
+    position: relative;
+}
+
+.no-js .cd-words-wrapper b {
+    opacity: 0;
+}
+
+.no-js .cd-words-wrapper b.is-visible {
+    opacity: 1;
+}
+
+/* -------------------------------- 
+  
+  xclip 
+  
+  -------------------------------- */
+
+.cd-headline.clip span {
+    display: inline-block;
+    padding: .2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    /* line */
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 2px;
+    height: 70%;
+    background-color: #aebcb9;
+}
+
+.cd-headline.clip b {
+    opacity: 0;
+}
+
+.cd-headline.clip b.is-visible {
+    opacity: 1;
+}
+
+/* Navbar */
+#header .collapse ul li a {
+    color: white;
+}
+
+/* End Header */
+
+/* Start About Me */
+.bar-1 {
+    width: 95%;
+}
+
+.bar-2 {
+    width: 80%;
+}
+
+.bar-3 {
+    width: 90%;
+}
+
+
+
+
+.btn-1 {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: black;
+    padding: 10px 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -ms-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+.btn-2 {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: black 1px solid;
+    padding: 10px 30px;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -ms-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+.btn-1:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid;
+}
+
+.btn-2:hover {
+    color: white;
+    background-color: black;
+    border: 0px;
+}
+
+/* End About Me */
+
+/* Start Services */
+#services .icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+#services .icon i{
+    font-size: 27px;
+    color: black;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+#services .inner:hover .icon{
+    background-color: black;
+}
+#services .inner:hover i{
+    color: white;
+}
+/* End Services */
+
+
+/* Start Portfolio */
+#portfolio .image {
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .image .layer{
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+#portfolio .image:hover .layer{
+    opacity: 1;
+}
+
+#portfolio .icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.977);
+    color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    cursor: pointer;
+}
+#portfolio .icon i{
+    font-size: 17px;
+    color: white;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+#portfolio .icon:hover {
+    background-color: white;
+    border: solid 1px black;
+}
+#portfolio .icon:hover i{
+    color: black;
+}
+
+.nav-tabs{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.nav-tabs .nav-link{
+    color: #333;
+    position: relative;
+}
+.nav-tabs .nav-link.active-2{
+    border: transparent;
+}
+.nav-tabs .nav-link:hover{
+    border: transparent;
+}
+.active-2::after{
+    content: '';
+    background-color: black;
+    width: 12px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+/* End Portfolio */
+
+/* Start Our Team */
+#team .image .port{
+    background-color: #5B5B5B;
+}
+#team .image {
+    position: relative;
+    overflow: hidden;
+}
+#team .image .layer{
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    bottom: 23%;
+    right: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+#team .image:hover .layer{
+    opacity: 1;
+}
+
+#team .icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.977);
+    color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    cursor: pointer;
+}
+#team .icon i{
+    font-size: 17px;
+    color: white;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+#team .icon:hover {
+    background-color: white;
+    border: solid 1px black;
+}
+#team .icon:hover i{
+    color: black;
+}
+
+/* End Our Team */
+
+/* Start Contact Us */
+.contact-us .icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.contact-us .icon i{
+    font-size: 27px;
+    color: black;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+.contact-us .inner:hover .icon{
+    background-color: black;
+}
+.contact-us .inner:hover i{
+    color: white;
+}
+/* End Contact Us */
+/* start footer */
+#footer p{
+    color: #668168;
+}
+/* end footer */
